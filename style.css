@@ -15,37 +15,40 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: var(--background);
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    
 }
 
 .card {
     display: flex;
-    width: 800px;
-    height: 600px;
+    width: 95%;
+    max-width: 800px;
     border-radius: 1em;
     overflow: hidden;
-    margin: 3%;
+    margin: 2%;
 }
 
-
-
-.product-img-container {
+/* .product-img-container {
     width: 50%;
+    height: 100%;
     overflow: hidden;
-}
+} */
 #mobile {
     display: none;
 }
 
 .product-img {
-    width: auto;
-    max-height: 100%;
+    width: 400px;
+    height: 100%;
 }
 
 .product-text {
@@ -114,11 +117,50 @@ h1 {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    .card {
-        width: 97vw;
-        height: 55%;
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        justify-content:flex-start;
     }
+    .card {
+        flex-direction: column;
+        margin: 1.75em auto;
+    }
+    .product-img-container {
+        width: 100%;
+    }
+    .product-img {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mobile {
+        display: block;
+    }
+    #desktop {
+        display: none;
+    }
+    .product-text {
+        padding: 8%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 3.5rem;
+        
+    }
+    .description {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .price {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
     h1 {
         font-size: 1.5rem;
     }
@@ -131,43 +173,5 @@ h1 {
     }
     .price {
         font-size: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .card {
-        margin: 3%;
-        width: 97vw;
-        height: auto;
-        flex-direction: column;
-    }
-    .product-img-container {
-        width: 100%;
-    }
-    .product-img {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #mobile {
-        display: block;
-    }
-    #desktop {
-        display: none;
-    }
-    .product-text {
-        /* height: auto; */
-        width: 100%;
-    }
-    h1 {
-        font-size: 2rem;
-        
-    }
-    .description {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-    }
-    .price {
-        font-size: 2rem;
     }
 }
