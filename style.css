@@ -35,7 +35,7 @@ body {
     border-radius: 1em;
     overflow: hidden;
     margin: 2%;
-    margin-top: 10%;
+    
 }
 
 #mobile {
@@ -115,11 +115,12 @@ h1 {
 
 
 
+
 @media only screen and (max-width: 750px) {
     
     .card {
         flex-direction: column;
-        /* margin: 1.75em auto; */
+        /* margin: 10%; */
     }
     .product-img-container {
         width: 100%;
