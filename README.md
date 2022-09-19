@@ -9,7 +9,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What I learned](#what-i-learned/practiced)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -26,7 +26,7 @@ Users should be able to:
 
 
 ### Screenshot
-![](./images/preview.jpg)
+![](./images/preview.JPG)
 
 
 
